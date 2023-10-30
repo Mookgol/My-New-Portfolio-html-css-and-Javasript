@@ -65,6 +65,21 @@ a:hover {
 .logo:hover {
   cursor: default;
 }
+/* .hero-img */
+.hero-img {
+    background-image: url("/assets/profile-pic.png");
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 3px solid black;
+    animation: morph 8s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    position: relative;
+    transition: all 1s ease-in-out;
+
+}
 
 /* HAMBURGER MENU */
 
@@ -197,6 +212,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  padding: 10px;
 }
 
 #socials-container {
@@ -216,6 +232,7 @@ section {
 /* BUTTONS */
 
 .btn-container {
+  padding-top: 15px;
   display: flex;
   justify-content: center;
   gap: 1rem;
