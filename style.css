@@ -56,7 +56,7 @@ nav {
 }
 #desktop-nav {
   position: fixed;
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
   width: 100%;
   z-index: 1;
 }
@@ -263,33 +263,25 @@ section {
   border-radius: 2rem;
 }
 
-.btn-color-1,
-.btn-color-2 {
+.btn-color-1 {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
 
+
+
 .btn-color-1:hover,
 .btn-color-2:hover {
+  background: rgb(4, 4, 4);
+  color: rgb(255, 253, 253);
   cursor: pointer;
 }
 
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
-}
-
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
 
 .btn-color-2 {
-  background: none;
+  background: rgb(242, 242, 242);
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
 
 .btn-container {
   gap: 1rem;
@@ -391,6 +383,7 @@ article .icon {
 
 #projects {
   position: relative;
+  margin-bottom: 150px;
 }
 
 .color-container {
@@ -417,7 +410,6 @@ article .icon {
 /* CONTACT */
 
 #contact {
-  display: flex;
   justify-content: center;
   flex-direction: column;
   height: 70vh;
@@ -430,20 +422,21 @@ article .icon {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 0.5rem;
+  
 }
 
 .contact-info-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
+  margin: 0rem;
+  width: 200px;
 }
 
 .contact-info-container p {
-  font-size: larger;
+  font-size: 1rem;
 }
 
 .contact-icon {
@@ -463,4 +456,46 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+.container {
+  width: 600px;
+  height: 350px;
+  margin: 50px auto;
+  background-color: #f9f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-button {
+  background-color: #fb0b7b;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
 }

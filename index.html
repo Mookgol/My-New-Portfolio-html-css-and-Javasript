@@ -16,7 +16,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contactForm">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -346,8 +346,23 @@
       />
     </section>
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
+      <p class="section__text__p1" >Get in Touch</p>
+      <h1 class="title" >Contact Me</h1>
+      <div class="container">
+        <form id="contactForm">
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" class="form-button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -378,7 +393,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 Mookgo Lebaka. All Rights Reserved.</p>
+      <!-- <p>Copyright &#169; 2023 Mookgo Lebaka. All Rights Reserved.</p> -->
     </footer>
     <script src="script.js"></script>
   </body>
